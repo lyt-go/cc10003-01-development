@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 from app.routers import metric as router_metric
+from app.routers import metricgov as router_metricgov
 from app.routers import queryboard as router_queryboard
 from app.routers import segment as router_segment
 from app.routers import abtest as router_abtest
@@ -25,4 +26,4 @@ from app.routers import tagmgr as router_tagmgr
 from app.routers import insight as router_insight
 from app.routers import dataval as router_dataval
 
-ROUTERS = [router_metric, router_queryboard, router_segment, router_abtest, router_analysis, router_dashboard, router_delivery, router_funnel, router_cohort, router_attribution, router_alertconfig, router_reportsch, router_dimprop, router_datadrill, router_forecast, router_tagmgr, router_insight, router_dataval]
+ROUTERS = [router_metric, router_metricgov, router_queryboard, router_segment, router_abtest, router_analysis, router_dashboard, router_delivery, router_funnel, router_cohort, router_attribution, router_alertconfig, router_reportsch, router_dimprop, router_datadrill, router_forecast, router_tagmgr, router_insight, router_dataval]

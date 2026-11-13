@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Overview from '@/views/Overview.vue'
 const Metric = () => import('@/views/metric/index.vue')
+const Metricgov = () => import('@/views/metricgov/index.vue')
 const Queryboard = () => import('@/views/queryboard/index.vue')
 const Segment = () => import('@/views/segment/index.vue')
 const Abtest = () => import('@/views/abtest/index.vue')
@@ -25,6 +26,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'overview', component: Overview },
     { path: '/metric', name: 'metric', component: Metric },
+    { path: '/metricgov', name: 'metricgov', component: Metricgov },
     { path: '/queryboard', name: 'queryboard', component: Queryboard },
     { path: '/segment', name: 'segment', component: Segment },
     { path: '/abtest', name: 'abtest', component: Abtest },
